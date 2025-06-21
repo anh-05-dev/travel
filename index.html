@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Hình ảnh với mô tả</title>
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 50px;
+    }
+
+    .image-box {
+      text-align: center;
+    }
+
+    .image-box img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .image-box img:hover {
+      transform: scale(1.05);
+    }
+
+    .image-box p {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-container">
+    <div class="image-box">
+      <img src="hinh1.jpg" alt="Ảnh 1">
+      <p>Hình ảnh đầu tiên</p>
+    </div>
+    <div class="image-box">
+      <img src="hinh2.jpg" alt="Ảnh 2">
+      <p>Hình ảnh thứ hai</p>
+    </div>
+  </div>
+
+</body>
+</html>
